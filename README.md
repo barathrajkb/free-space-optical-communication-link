@@ -239,14 +239,13 @@ Python captures the received serial data and converts the binary stream back int
 
 Possible upgrades:
 
-- Manchester encoding
 - CRC / parity error detection
 - Automatic synchronization
 - Higher bit rates
 - Optical focusing lenses
 - Better photodiode amplifier design
 - Real-time packet protocol
-- STM32-based implementation
+- STM32-based implementation for faster communication
 - Li-Fi style communication system
 
 ---
@@ -261,7 +260,7 @@ Possible upgrades:
 │   └── rx.ino
 │
 ├── software/
-│   ├── rc.py
+│   ├── enc.py
 │   └── dec.py
 │
 ├── docs/
@@ -281,7 +280,7 @@ Possible upgrades:
 3. Upload `tx.ino` to transmitter Arduino
 4. Upload `rx.ino` to receiver Arduino
 5. Align laser beam with photodiode receiver
-6. Adjust threshold using potentiometer if required
+6. Adjust threshold if required
 
 ---
 
